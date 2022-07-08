@@ -1,0 +1,19 @@
+{% extends 'base.html' %} {% block content %}
+<div>
+	<h2>Game Instructions</h2>
+	<p>
+		Enter player chopices in the address bar in the following format
+		http//127.0.0.1:5000/p1choice/p2-choice
+	</p>
+	<p>Based on the following rules a winner will be declared.</p>
+	<ul>
+		<li>Rock beats Scissors</li>
+		<li>Paper beats Rock</li>
+		<li>Scissors beats Paper</li>
+	</ul>
+	<form action="/play">
+		<button>Play</button>
+	</form>
+</div>
+
+{% endblock %}
