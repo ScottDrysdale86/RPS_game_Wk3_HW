@@ -2,29 +2,43 @@
 <h1>{{ title }}</h1>
 <div>
 	<h2>Game Instructions</h2>
+	<h3>
+		<b><u>Basic Address Bar Game</u></b>
+	</h3>
 	<h4>
-		<b><u>Player Vs Player</u></b>
+		<b>Player Vs Player</b>
 	</h4>
 	<p>
 		Enter player choices in the address bar in the following format
-		http//127.0.0.1:5000/p1choice/p2-choice
+		http//127.0.0.1:5000/p1-choice/p2-choice
 	</p>
 	<h4>
-		<b><u>Player Vs Computer</u></b>
+		<b>Player Vs Computer</b>
 	</h4>
 	<p>
 		Enter player choice in the address bar in the following format
 		http//127.0.0.1:5000/Computer/p-choice
 	</p>
+	<h3>
+		<b><u>User Input Game</u></b>
+	</h3>
+	<h4>
+		<b>Player Vs Player</b>
+	</h4>
+	<p>Enter player names and choices then hit See Winner button.</p>
+	<h4>
+		<b>Player Vs Computer</b>
+	</h4>
+	<p>Enter player name and choice then hit See Winner button.</p>
+	<h3>
+		<b><u>How To Win</u></b>
+	</h3>
 	<p>Based on the following rules a winner will be declared.</p>
 	<ul>
 		<li>Rock beats Scissors</li>
 		<li>Paper beats Rock</li>
 		<li>Scissors beats Paper</li>
 	</ul>
-	<form action="/play">
-		<button>Play</button>
-	</form>
 </div>
 
 {% endblock %}

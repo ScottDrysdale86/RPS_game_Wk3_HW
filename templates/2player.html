@@ -1,0 +1,36 @@
+{% extends 'base.html' %} {% block two_player %}
+
+<h1>{{ title }}</h1>
+<div>
+	<h2>Player Vs Player</h2>
+	<p>
+		Players will enter their name and select an option from the drop-down
+		menu, then hit See Winner button
+	</p>
+	<form action="/2player" method="post">
+		<label for="input-p1-name">Player Name: </label>
+		<input type="text" name="p1-name" id="input-p1-name" />
+
+		<label for="input-p1-choice">Player Choice: </label>
+		<select name="p1-choice" id="input-p1-choice">
+			<option value="">Select from the below choices:</option>
+			<option value="rock">Rock</option>
+			<option value="paper">Paper</option>
+			<option value="scissors">Scissors</option>
+		</select>
+
+		<label for="input-p2-name">Player Name: </label>
+		<input type="text" name="p2-name" id="input-p2-name" />
+
+		<label for="input-p2-choice">Player Choice: </label>
+		<select name="p2-choice" id="input-p2-choice">
+			<option value="">Select from the below choices:</option>
+			<option value="rock">Rock</option>
+			<option value="paper">Paper</option>
+			<option value="scissors">Scissors</option>
+		</select>
+
+		<button type="submit">See Winner</button>
+	</form>
+</div>
+{% endblock %}
