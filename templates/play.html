@@ -1,42 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Rock Paper Scissors Game</title>
-	</head>
-	<body>
-		<header>
-			<nav>
-				<ul>
-					<li><a href="/">Home</a></li>
-					<li><a href="/play">Play</a></li>
-				</ul>
-			</nav>
-		</header>
-		<h1>{{ title }}</h1>
-		<div>
-			<h2>Play Game</h2>
-			<p>
-				Each player will enter their name and select an option from the
-				drop-down menu.
-			</p>
-			<form action="/play" method="post">
-				<label for="input-p1-name">Player1 Name</label>
-				<input type="text" name="p1-name" id="input-p1-name" />
+{% extends 'base.html' %} {% block play %}
 
-				<label for="input-p1-choice">Player 1 Choice</label>
-				<select name="p1-choice" id="input-p1-choice">
-					<option value="">Select from the below choices:</option>
-					<option value="rock">Rock</option>
-					<option value="paper">Paper</option>
-					<option value="scissors">Scissors</option>
-				</select>
-				<button type="submit">See Winner</button>
-			</form>
+<h1>{{ title }}</h1>
+<div>
+	<h2>Play Game</h2>
+	<p>
+		Each player will enter their name and select an option from the
+		drop-down menu.
+	</p>
+	<form action="/play" method="post">
+		<label for="input-p1-name">Player1 Name</label>
+		<input type="text" name="p1-name" id="input-p1-name" />
 
-			<h1>The winner is {{ p1_name }} {{ result }}</h1>
-		</div>
-	</body>
-</html>
+		<label for="input-p1-choice">Player 1 Choice</label>
+		<select name="p1-choice" id="input-p1-choice">
+			<option value="">Select from the below choices:</option>
+			<option value="rock">Rock</option>
+			<option value="paper">Paper</option>
+			<option value="scissors">Scissors</option>
+		</select>
+		<button type="submit">See Winner</button>
+	</form>
+
+	<h1>The winner is {{ p1_name }} {{ result }}</h1>
+</div>
+{% endblock %}
