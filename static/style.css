@@ -1,0 +1,46 @@
+body {
+	background-color: #357266;
+	text-align: center;
+}
+
+header {
+	background-color: #0e3b43;
+}
+
+nav {
+	align-items: center;
+	color: white;
+}
+
+ul {
+	display: flex;
+	justify-content: center;
+}
+li {
+	margin-right: 15px;
+	list-style: none;
+}
+
+a {
+	color: #a3bbad;
+	text-decoration: none;
+	font-size: 1rem;
+}
+
+main {
+	border: 10px;
+	border-color: black;
+	border-width: 10px;
+	border-radius: 10px;
+}
+
+h1 {
+	text-align: center;
+}
+
+#two_play {
+	border: 10px;
+	border-color: black;
+	border-width: 10px;
+	border-radius: 10px;
+}
