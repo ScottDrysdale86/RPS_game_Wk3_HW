@@ -30,6 +30,13 @@ def computer(p_choice):
     )
 
 
-# @app.route("/play")
-# def play():
-#     return render_template("play.html", title="Rock, Paper, Scissors Game", result = Game.play_computer(player.player_choice))
+@app.route("/play", methods=["GET", "POST"])
+def play():
+    if request.method == "POST":
+        player_name = request.form.get("p1-name")
+        player_choice = request.form.get("p1-choice")
+        return Game.play_computer(player_choice)
+    return render_template(
+        "play.html",
+        title="Rock, Paper, Scissors Game",
+    )
