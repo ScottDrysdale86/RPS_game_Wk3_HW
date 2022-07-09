@@ -39,6 +39,7 @@ a {
 	justify-content: space-around;
 	align-items: center;
 }
+
 #basic_game {
 	display: flex;
 	flex-direction: column;
@@ -115,7 +116,7 @@ h1 {
 	padding-bottom: 15px;
 }
 
-/* Styling for basic 2 player */
+/* Styling for winner/winner_2play and basic pages */
 .basic {
 	display: flex;
 	flex-direction: column;
@@ -150,8 +151,8 @@ h1 {
 	border-style: solid;
 	border-radius: 7px;
 }
-/* styling for basic v computer */
-.basic-comp {
+/* styling for winner page for basic game */
+#basic-comp {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -172,9 +173,22 @@ h1 {
 	border-radius: 7px;
 }
 
-/* style for input v computer */
+#result_comp {
+	display: flex;
+	flex-direction: column;
+	font-weight: bold;
+	font-size: 2rem;
+	margin: 10px 0px;
+	height: 100px;
+	width: 400px;
+	background-color: #65532f;
+	border-color: #a3bbad;
+	border-style: solid;
+	border-radius: 7px;
+}
 
-#comp {
+/* style for inputs computer and 2player */
+.comp {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -226,6 +240,7 @@ h1 {
 	margin: 20px 10px 10px 10px;
 }
 
+/* style for 2 player page */
 #two_display {
 	display: flex;
 	flex-direction: column;
@@ -237,18 +252,4 @@ h1 {
 	border-style: solid;
 	border-radius: 7px;
 	font-size: 1.4rem;
-}
-
-#result_comp {
-	display: flex;
-	flex-direction: column;
-	font-weight: bold;
-	font-size: 2rem;
-	margin: 10px 0px;
-	height: 100px;
-	width: 400px;
-	background-color: #65532f;
-	border-color: #a3bbad;
-	border-style: solid;
-	border-radius: 7px;
 }

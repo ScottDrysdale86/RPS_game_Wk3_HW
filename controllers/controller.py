@@ -42,9 +42,13 @@ def play():
         computer_choice = Game.computer_choice()
         computer = Player("Computer", computer_choice)
         result = Game.play_computer(player_1, computer)
+        if result != None:
+            result_name = result.name
+        else:
+            result_name = "No-one"
         return render_template(
             "winner.html",
-            result=result.name,
+            result_name=result_name,
             player_name=player_name,
             player_choice=player_choice,
             computer_name="computer",
