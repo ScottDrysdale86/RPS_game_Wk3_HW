@@ -66,9 +66,13 @@ def two_play():
         player_2 = Player(player2_name, player2_choice)
 
         result = Game.play_computer(player_1, player_2)
+        if result != None:
+            result_name = result.name
+        else:
+            result_name = "No-one"
         return render_template(
             "winner_2play.html",
-            result=result.name,
+            result_name=result_name,
             player1_name=player1_name,
             player1_choice=player1_choice,
             player2_name=player2_name,

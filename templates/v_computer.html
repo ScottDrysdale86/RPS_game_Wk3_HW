@@ -3,22 +3,28 @@
 <h1>{{ title }}</h1>
 <div id="comp">
 	<h2>Player Vs Computer</h2>
-	<p>
-		Player will enter their name and select an option from the drop-down
-		menu, then hit See Winner button
-	</p>
-	<form action="/play" method="post">
-		<label for="input-p1-name">Player Name: </label>
-		<input type="text" name="p1-name" id="input-p1-name" />
+	<div class="comp_display">
+		<p>
+			Player will enter their name and select an option from the drop-down
+			menu, then hit <b>See Winner</b> button
+		</p>
+		<form id="player1_form" action="/play" method="post">
+			<input
+				class="player_name"
+				type="text"
+				name="p1-name"
+				id="input-p1-name"
+				placeholder="Player Name"
+			/>
 
-		<label for="input-p1-choice">Player Choice: </label>
-		<select name="p1-choice" id="input-p1-choice">
-			<option value="">Select from the below choices:</option>
-			<option value="rock">Rock</option>
-			<option value="paper">Paper</option>
-			<option value="scissors">Scissors</option>
-		</select>
-		<button type="submit">See Winner</button>
-	</form>
+			<select class="dropdown" name="p1-choice" id="input-p1-choice">
+				<option value="">Select from the below choices:</option>
+				<option value="rock">Rock</option>
+				<option value="paper">Paper</option>
+				<option value="scissors">Scissors</option>
+			</select>
+			<button class="button" type="submit">See Winner</button>
+		</form>
+	</div>
 </div>
 {% endblock %}

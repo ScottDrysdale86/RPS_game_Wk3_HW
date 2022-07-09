@@ -10,11 +10,11 @@ class Game:
     def basic_play(player1_choice, player2_choice):
         while player1_choice != player2_choice:
             if player1_choice == "rock" and player2_choice == "scissors":
-                return f"Player 1 wins by playing rock"
+                return f"Player 1 wins"
             elif player1_choice == "paper" and player2_choice == "rock":
-                return f"Player 1 wins by playing paper"
+                return f"Player 1 wins"
             elif player1_choice == "scissors" and player2_choice == "paper":
-                return f"Player 1 wins by playing scissors"
+                return f"Player 1 wins"
             else:
                 return f"Player 2 wins"
         return f"It is a draw"
@@ -41,11 +41,19 @@ class Game:
 
     def play(player_1, player_2):
         while player_1.choice.lower() != player_2.choice.lower():
-            if player_1.choice.lower() == "rock" and player_2.choice.lower() == "scissors":
+            if (
+                player_1.choice.lower() == "rock"
+                and player_2.choice.lower() == "scissors"
+            ):
                 return player_1
-            elif player_1.choice.lower() == "paper" and player_2.choice.lower() == "rock":
+            elif (
+                player_1.choice.lower() == "paper" and player_2.choice.lower() == "rock"
+            ):
                 return player_1
-            elif player_1.choice.lower() == "scissors" and player_2.choice.lower() == "paper":
+            elif (
+                player_1.choice.lower() == "scissors"
+                and player_2.choice.lower() == "paper"
+            ):
                 return player_1
             else:
                 return player_2
@@ -62,11 +70,19 @@ class Game:
 
     def play_computer(player_1, computer):
         while player_1.choice.lower() != computer.choice.lower():
-            if player_1.choice.lower() == "rock" and computer.choice.lower() == "scissors":
+            if (
+                player_1.choice.lower() == "rock"
+                and computer.choice.lower() == "scissors"
+            ):
                 return player_1
-            elif player_1.choice.lower() == "paper" and computer.choice.lower() == "rock":
+            elif (
+                player_1.choice.lower() == "paper" and computer.choice.lower() == "rock"
+            ):
                 return player_1
-            elif player_1.choice.lower() == "scissors" and computer.choice.lower() == "paper":
+            elif (
+                player_1.choice.lower() == "scissors"
+                and computer.choice.lower() == "paper"
+            ):
                 return player_1
             else:
                 return computer

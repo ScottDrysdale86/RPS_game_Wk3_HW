@@ -1,12 +1,12 @@
 {% extends 'base.html' %} {% block winner_2play %}
 
 <h1>{{ title }}</h1>
-<div id="winner2">
-	<h2>Player Vs Player</h2>
-	<p>{{ player1_name }} chose {{ player1_choice }}</p>
-	<p>
-		The winner is {{ result }}. {{ player2_name }} chose {{ player2_choice
-		}}
+<h2>Player Vs Player Result</h2>
+<div class="basic">
+	<p class="choices">
+		{{ player1_name }} chose {{ player1_choice }}. {{ player2_name }} chose
+		{{ player2_choice }}
 	</p>
+	<p class="result">{{ result_name }} wins!!!.</p>
 </div>
 {% endblock %}

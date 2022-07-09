@@ -1,7 +1,9 @@
 {% extends 'base.html' %} {% block basic %}
 <h1>{{ title }}</h1>
-<div id="basic">
-	<p>Player 1 chose {{ p1_choice }} and player 2 chose {{ p2_choice }}:</p>
-	<p>{{ result }}</p>
+<div class="basic">
+	<p class="choices">
+		Player 1 chose {{ p1_choice }} and player 2 chose {{ p2_choice }}:
+	</p>
+	<p class="result">{{ result }}</p>
 </div>
 {% endblock %}

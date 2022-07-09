@@ -1,8 +1,8 @@
 {% extends 'base.html' %} {% block computer %}
 <h1>{{ title }}</h1>
-<div id="basic-comp">
-    <p>Player 1 chose {{ p_choice }}</p>
-    <h2>{{ result }}</h2>
+<div class="basic-comp">
+	<p id="player_choice">Player 1 chose {{ p_choice }}</p>
+	<h2 id="result_comp">{{ result }}</h2>
 </div>
 
 {% endblock %}
